@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background:rgb(0, 1, 49); color: aliceblue;">
+    <div onclick="add()" style="position:fixed;  top:400px; left:45%;" class="btn btn-primary">Add</div>
+    <div onclick="calculate()" style="position:relative;  top:300px; left:74%;" class="btn btn-primary">Calculate</div>
+    <div style="position:absolute;  top:200px; left:70%; width: 200px; height: 80px;" class="btn btn-primary">Result  <section id="result"></section> </div>
+   
+
+
+    <ul>
+        <ls>Course</ls>
+        <ls>Credit Hour</ls>
+        <ls>Grade</ls>
+    </ul>
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<div class="container m-5 text-primary w-50" id="main"> 
+<div class="container-fluid mb-2" id="show1">
+        <div  class="row gap-5 " >
+            <div class="col">
+                <input type="text" placeholder="insert course name">
+            </div>
+            <div class="col">
+                <select name="cr_hr" id="cr_hr1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            <div class="col">
+                <select name="grade" id="grade1">
+                    <option value="4">A+</option>
+                    <option value="4">A</option>
+                    <option value="3.75">A-</option>
+                    <option value="3.5">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.75">B-</option>
+                    <option value="2.5">C+</option>
+                    <option value="2">C</option>
+                    <option value="1.75">C-</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+        </div>
+  </div> 
+
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<div class="container mb-2" id="show2" style="display:none;">
+    <div  class="row gap-5 " >
+        <div class="col">
+            <input type="text" placeholder="insert course name">
+        </div>
+        <div class="col">
+            <select name="cr_hr" id="cr_hr2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="col">
+            <select name="grade" id="grade2">
+                <option value="4">A+</option>
+                <option value="4">A</option>
+                <option value="3.75">A-</option>
+                <option value="3.5">B+</option>
+                <option value="3">B</option>
+                <option value="2.75">B-</option>
+                <option value="2.5">C+</option>
+                <option value="2">C</option>
+                <option value="1.75">C-</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+            </select>
+        </div>
+    </div>
+</div> 
+
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<div class="container mb-2" id="show3" style="display:none;">
+    <div  class="row gap-5 " >
+        <div class="col">
+            <input type="text" placeholder="insert course name">
+        </div>
+        <div class="col">
+            <select name="cr_hr" id="cr_hr3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="col">
+            <select name="grade" id="grade3">
+                <option value="4">A+</option>
+                <option value="4">A</option>
+                <option value="3.75">A-</option>
+                <option value="3.5">B+</option>
+                <option value="3">B</option>
+                <option value="2.75">B-</option>
+                <option value="2.5">C+</option>
+                <option value="2">C</option>
+                <option value="1.75">C-</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+            </select>
+        </div>
+    </div>
+</div> 
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<div class="container mb-2" id="show4" style="display:none;">
+    <div  class="row gap-5 " >
+        <div class="col">
+            <input type="text" placeholder="insert course name">
+        </div>
+        <div class="col">
+            <select name="cr_hr" id="cr_hr4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="col">
+            <select name="grade" id="grade4">
+                <option value="4">A+</option>
+                <option value="4">A</option>
+                <option value="3.75">A-</option>
+                <option value="3.5">B+</option>
+                <option value="3">B</option>
+                <option value="2.75">B-</option>
+                <option value="2.5">C+</option>
+                <option value="2">C</option>
+                <option value="1.75">C-</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+            </select>
+        </div>
+    </div>
+</div> 
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<div class="container mb-2" id="show5" style="display:none;">
+    <div  class="row gap-5 " >
+        <div class="col">
+            <input type="text" placeholder="insert course name">
+        </div>
+        <div class="col">
+            <select name="cr_hr" id="cr_hr5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="col">
+            <select name="grade" id="grade5">
+                <option value="4">A+</option>
+                <option value="4">A</option>
+                <option value="3.75">A-</option>
+                <option value="3.5">B+</option>
+                <option value="3">B</option>
+                <option value="2.75">B-</option>
+                <option value="2.5">C+</option>
+                <option value="2">C</option>
+                <option value="1.75">C-</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+            </select>
+        </div>
+    </div>
+</div> 
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<div class="container mb-2" id="show6" style="display:none;">
+    <div  class="row gap-5 " >
+        <div class="col">
+            <input type="text" placeholder="insert course name">
+        </div>
+        <div class="col">
+            <select name="cr_hr" id="cr_hr6">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="col">
+            <select name="grade" id="grade6">
+                <option value="4">A+</option>
+                <option value="4">A</option>
+                <option value="3.75">A-</option>
+                <option value="3.5">B+</option>
+                <option value="3">B</option>
+                <option value="2.75">B-</option>
+                <option value="2.5">C+</option>
+                <option value="2">C</option>
+                <option value="1.75">C-</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+            </select>
+        </div>
+    </div>
+</div> 
+
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<div class="container mb-2" id="show7" style="display:none;">
+    <div  class="row gap-5 " >
+        <div class="col">
+            <input type="text" placeholder="insert course name">
+        </div>
+        <div class="col">
+            <select name="cr_hr" id="cr_hr7">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="col">
+            <select name="grade" id="grade7">
+                <option value="4">A+</option>
+                <option value="4">A</option>
+                <option value="3.75">A-</option>
+                <option value="3.5">B+</option>
+                <option value="3">B</option>
+                <option value="2.75">B-</option>
+                <option value="2.5">C+</option>
+                <option value="2">C</option>
+                <option value="1.75">C-</option>
+                <option value="1">D</option>
+                <option value="0">F</option>
+            </select>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+
+</body>
+</html>
+<script src="js.js">
+ 
+</script>

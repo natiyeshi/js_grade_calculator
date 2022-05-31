@@ -1,0 +1,26 @@
+#add {
+    position:fixed;
+    left:80%;
+    top: 40%;
+}
+#cal{
+    margin-top: 5em;
+    position:relative;
+    left:30%;
+    top: 70%;
+}
+#line{
+    position: relative;
+    left: 120px;
+}
+ul{
+    margin-left: 380px;
+    list-style: none;
+    display: flex;
+    gap:160px;
+}
+
+#main{
+    position:relative;
+    left:300px;
+}
